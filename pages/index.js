@@ -50,13 +50,13 @@ export default function Home({ users }) {
 
   return (
     <>
-      <Box className={styles.container}>
+      <Box className={styles.container} h='90vh'>
         <Head>
           <title>{isLoading ? 'Loading...' : currentUser.name}</title>
           <meta property='og:title' content='Leanne Graham' />
           <link rel='icon' href='/favicon.ico' />
         </Head>
-        <Box justify='center' py='5vh' px='5vw'>
+        <Box alignItems='center' px='5vw'>
           {isLoading ? (
             <Spinner />
           ) : (

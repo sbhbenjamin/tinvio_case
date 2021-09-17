@@ -14,6 +14,7 @@ const NameCard = ({ user }) => {
   return (
     <Flex
       direction='column'
+      w='auto'
       h='inherit'
       maxW='600px'
       borderWidth='1px'
