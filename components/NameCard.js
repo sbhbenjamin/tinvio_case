@@ -15,32 +15,24 @@ const NameCard = ({ user }) => {
     <Flex
       direction='column'
       w='auto'
-      h='inherit'
+      h='400px'
       maxW='600px'
+      maxH='500px'
       borderWidth='1px'
       borderRadius='10px'
       shadow='lg'
       backgroundColor='white'
     >
-      <Box h='40%' overflow='hidden' position='relative'>
+      <Box h='40%' overflow='hidden'>
         <Image
           alt='Cover Image'
           objectFit='cover'
           src='image.jpg'
-          position='absolute'
-          top={
-            isSmallerThan1200
-              ? '-45% !important'
-              : isLargerThan1500
-              ? '-35% !important'
-              : '0'
-          }
-          minH='100%'
           className='namecard-image'
         />
       </Box>
       <Flex direction='column' p='8' h='60%'>
-        <Heading fontSize='2xl' mb={12}>
+        <Heading fontSize='2xl' mb={{ base: 4, xl: 12 }}>
           {user.name}
         </Heading>
         <Flex direction='column' justifyContent='space-between' h='inherit'>

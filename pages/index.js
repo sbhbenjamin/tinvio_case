@@ -50,13 +50,13 @@ export default function Home({ users }) {
 
   return (
     <>
-      <Box className={styles.container} h='90vh'>
+      <Box className={styles.container}>
         <Head>
           <title>{isLoading ? 'Loading...' : currentUser.name}</title>
           <meta property='og:title' content='Leanne Graham' />
           <link rel='icon' href='/favicon.ico' />
         </Head>
-        <Box alignItems='center' px='5vw'>
+        <Box px='5vw'>
           {isLoading ? (
             <Spinner />
           ) : (
@@ -77,11 +77,11 @@ export default function Home({ users }) {
                   />
                 </Box>
                 <Spacer />
-                <Box h='500px'>
+                <Box>
                   <NameCard user={currentUser} />
                 </Box>
                 <Spacer />
-                <Box h='500px'>
+                <Box>
                   <PostCard user={currentUser} posts={currentPosts} />
                 </Box>
               </Stack>

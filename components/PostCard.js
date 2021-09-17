@@ -7,6 +7,7 @@ const PostCard = ({ user, posts }) => {
     <Stack
       h='inherit'
       maxW='600px'
+      maxH='500px'
       borderWidth='1px'
       borderRadius='10px'
       shadow='lg'
