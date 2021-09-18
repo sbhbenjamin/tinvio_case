@@ -15,7 +15,7 @@ const NameCard = ({ user }) => {
     <Flex
       direction='column'
       w='auto'
-      h='400px'
+      h='500px'
       maxW='600px'
       maxH='500px'
       borderWidth='1px'

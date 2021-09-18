@@ -5,7 +5,7 @@ import Post from './Post';
 const PostCard = ({ user, posts }) => {
   return (
     <Stack
-      h='inherit'
+      h='500px'
       maxW='600px'
       maxH='500px'
       borderWidth='1px'
